@@ -1,0 +1,14 @@
+<h1>{{frase}}</h1>
+<a href="{{link}}">Linkado da parte lógica</a>
+
+<p (click)="mudaCor()" [style.background]="bgColor" [style.color]="fontColor">Mude a cor</p>
+
+<select #select (change)="setDisplaytoOpt(select.value)">
+    <option value="">Escolha uma opção</option>
+    <option value="Bola">Bola</option>
+    <option value="Sapato">Sapato</option>
+    <option value="Blusa">Blusa</option>
+    <option value="Boneca">Boneca</option>
+</select>
+
+<p>Texto do select: {{varTexto}}</p>
